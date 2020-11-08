@@ -1,0 +1,16 @@
+<div>
+  <input name="productName" [(ngModel)]="product.name"  placeholder="Enter Product Name">
+  <button (click)="saveProduct()">Submit</button>
+</div>
+<div>
+  <table>
+    <tr>
+      <td>id</td>
+      <td>name</td>
+    </tr>
+    <tr *ngFor="let product of productList">
+      <td>{{product.id}}</td>
+      <td>{{product.name}}</td>
+      </tr>
+  </table>
+</div>
